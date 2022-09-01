@@ -13,10 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from itertools import product
+from os import abort
 from django.contrib import admin
 from django.urls import path
 from netstore.views import *
 
 app_name='netstore'
 urlpatterns = [
-path('', index, name='index'),]
+path('', index, name='index'),
+
+]
