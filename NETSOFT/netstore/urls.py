@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from NETSOFT.netstore.views import index
 from netstore.views import *
 
 app_name='netstore'
